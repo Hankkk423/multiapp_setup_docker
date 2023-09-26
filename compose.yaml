@@ -1,0 +1,12 @@
+services:
+  app1:
+    build:
+      context: ./app_1
+    ports:
+      - 9001:5000  # Port mapping specific to app1
+  app2:
+    build:
+      context: ./app_2
+    ports:
+      - 9002:5000  # Port mapping specific to app2
+  # Add more services for other applications as needed
