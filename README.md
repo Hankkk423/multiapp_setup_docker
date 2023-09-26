@@ -2,15 +2,15 @@
 
 This guide will help you set up a Dockerized application using Docker Compose. We'll walk you through the process step by step.
 
-Docker Document: https://docs.docker.com/language/python/
-Docker Example: `git clone https://github.com/docker/python-docker`
+- Docker Document: [https://docs.docker.com/language/python/](https://docs.docker.com/language/python/)
+- Docker Example: `git clone https://github.com/docker/python-docker`
 
 ## Prerequisites
 Before you begin, make sure you have Docker Desktop and Python 3.11 installed on your system.
 
 ### 1. Create Application Folders
-Create separate folders for each of your applications. For example, 'app_1' and 'app_2'.
-You can refer to the sample docker application by: `git clone https://github.com/docker/python-docker`
+- Create separate folders for each of your applications. For example, 'app_1' and 'app_2'.
+- You can refer to the sample docker application by: `git clone https://github.com/docker/python-docker`
 
 ### 2. Initialize Docker Configuration
 Navigate to the app's directory:
@@ -114,10 +114,13 @@ docker compose down
 ```
 
 ### 9. Run Multiple Apps Concurrently
-To run multiple apps concurrently, create a global `compose.yaml` file in the root directory. In the global `compose.yaml` file, configure server name (app1/app2 ...etc) and its port number (9001:5000 ...etc), and use the following command:
+To run multiple apps concurrently, create a global `compose.yaml` file in the root directory. In the global `compose.yaml` file, configure server name (app1/ app2 ...etc) and its port number (9001:5000 ...etc), and use the following command:
 ```bash
 cd path/to/root
 docker compose up --build
 ```
 
 That's it! You've successfully set up and Dockerized your application. Repeat these steps for any additional applications you want to containerize.
+
+## License
+This project is licensed under the MIT License. You can find more details in the LICENSE file.
